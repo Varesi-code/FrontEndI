@@ -50,13 +50,18 @@ h1 {
 
 h2 {
     font-size: 45px;
+    text-align: center;
 }
 
 h1,
 h2 {
     font-family: 'Caveat', cursive;
     font-weight: 400;
-    margin: 0;
+    margin: 1rem;
+}
+
+.projects p.subtext {
+    text-align: center;
 }
 
 .content-wrap {
@@ -79,7 +84,6 @@ h3 {
 }
 
 .divider>section {
-    border-bottom: 1px dashed #343434;
     padding: 25px 0;
 }
 
@@ -104,6 +108,13 @@ header {
     background: #F7FFF7;
 }
 
+.content-wrap.divider {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .projects a {
     color: #0D1117;
 }
@@ -123,6 +134,9 @@ header {
 
 .project-item {
     overflow: hidden;
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
 }
 
 .project-item h3 {
@@ -179,10 +193,6 @@ footer {
     header,
     footer {
         text-align: center;
-    }
-    .project-item img {
-        float: left;
-        margin-right: 20px;
     }
     .job-item {
         display: grid;
